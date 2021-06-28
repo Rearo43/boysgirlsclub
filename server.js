@@ -15,12 +15,18 @@ app.use(express.static('./public'));
 
 // Routes
 app.get('/', handleHome);
+app.get('/updates', handleUpdate);
 app.use('*', handleNotFound);
 app.use(handleError);
 
 //////////////     Home Page
 function handleHome(req, res) {
   res.render('public/index');
+}
+
+//////////////     Weekly Updates
+function handleUpdate(req, res) {
+  res.render('public/update');
 }
 
 //////////////////    Errors
