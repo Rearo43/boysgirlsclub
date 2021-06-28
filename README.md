@@ -1,0 +1,1 @@
+# I'm the Director or the Kirkland Boys & Girls Club summer STEAM Camp. This is a page I've created to communicate to the parents of my campers and update them through the 9 week camp.
