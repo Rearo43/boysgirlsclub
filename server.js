@@ -20,17 +20,7 @@ app.use(handleError);
 
 //////////////     Home Page
 function handleHome(req, res) {
-  let SQL = 'SELECT * FROM books';
-  client.query(SQL)
-    .then(results => {
-      let amount = results.rowCount;
-      let databaseArr = results.rows;
-      let hide = 'hidden';
-      let show = '';
-
-      res.render('pages/index', { data: databaseArr, pgName: `${amount} Saved Books`, home: hide, searchNew: show});
-    })
-    .catch(error => handleError(error, res));
+  res.render('public/index');
 }
 
 //////////////////    Errors
@@ -40,9 +30,8 @@ function handleNotFound(req, res) {
 
 function handleError(error, res) {
   console.log(error);
-  res.render('pages/error', {data: error.message, pgName: 'Error 404'});
+  res.render('pages/error', { data: error.message, pgName: 'Error 404' });
 }
-
 
 ////////////// Listen on Port, Start the server
 client.connect(() => {
