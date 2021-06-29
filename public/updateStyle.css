@@ -1,0 +1,68 @@
+body {
+    background: rgb(145, 209, 167);
+    margin: 5% 5% 0 5%;
+}
+header{
+    width: 60%;
+    margin: 2% 0 0 20%;
+    /* border: 2px solid black; */
+    background: rgba(0, 0, 0, 0.301);
+    box-shadow: 10px 10px 20px;
+}
+
+h1{
+    width: 50%;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+.sum{
+    color: rgb(253, 253, 253);
+    padding: 15px;
+}
+
+nav{
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    /* margin-bottom: 30px; */
+    /* position: relative; */
+    
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+nav, .nav{
+    text-align: center;
+    float: left;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /* margin-bottom: 30px; */
+
+}
+
+.nav{
+    width: auto;
+    height: auto;
+    /* position: absolute; */
+    /* right: 0;
+    top: 0; */
+}
+
+nav .nav:hover{
+    background: rgb(151, 151, 151);
+    color: rgb(5, 5, 5);
+}
+
+nav .nav:active{
+    background: rgb(145, 209, 167);
+    color: rgb(255, 255, 255);
+}
+
+.link{
+    color: rgb(190, 6, 6);
+}
